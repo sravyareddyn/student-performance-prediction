@@ -1,0 +1,180 @@
+{
+    "model_name": "Random Forest Classifier",
+    "dataset": "UCI Student Performance (Math)",
+    "train_samples": 316,
+    "test_samples": 79,
+    "random_state": 42,
+    "hyperparameters": {
+        "n_estimators": 100,
+        "max_depth": 6,
+        "min_samples_split": 4,
+        "criterion": "gini"
+    },
+    "metrics": {
+        "accuracy": 0.6708860759493671,
+        "precision_macro": 0.7016317016317016,
+        "precision_weighted": 0.6817149095630108,
+        "recall_macro": 0.6746309246309247,
+        "recall_weighted": 0.6708860759493671,
+        "f1_macro": 0.6844541910331383,
+        "f1_weighted": 0.6724405951587831,
+        "confusion_matrix": [
+            [
+                15,
+                11,
+                0
+            ],
+            [
+                7,
+                23,
+                3
+            ],
+            [
+                0,
+                5,
+                15
+            ]
+        ],
+        "classification_report_dict": {
+            "Low (At-Risk)": {
+                "precision": 0.6818181818181818,
+                "recall": 0.5769230769230769,
+                "f1-score": 0.625,
+                "support": 26.0
+            },
+            "Medium (Satisfactory)": {
+                "precision": 0.5897435897435898,
+                "recall": 0.696969696969697,
+                "f1-score": 0.6388888888888888,
+                "support": 33.0
+            },
+            "High (Good)": {
+                "precision": 0.8333333333333334,
+                "recall": 0.75,
+                "f1-score": 0.7894736842105263,
+                "support": 20.0
+            },
+            "accuracy": 0.6708860759493671,
+            "macro avg": {
+                "precision": 0.7016317016317016,
+                "recall": 0.6746309246309247,
+                "f1-score": 0.6844541910331383,
+                "support": 79.0
+            },
+            "weighted avg": {
+                "precision": 0.6817149095630108,
+                "recall": 0.6708860759493671,
+                "f1-score": 0.672440595158783,
+                "support": 79.0
+            }
+        },
+        "classification_report_str": "                       precision    recall  f1-score   support\n\n        Low (At-Risk)       0.68      0.58      0.62        26\nMedium (Satisfactory)       0.59      0.70      0.64        33\n          High (Good)       0.83      0.75      0.79        20\n\n             accuracy                           0.67        79\n            macro avg       0.70      0.67      0.68        79\n         weighted avg       0.68      0.67      0.67        79\n",
+        "labels": [
+            "Low (At-Risk)",
+            "Medium (Satisfactory)",
+            "High (Good)"
+        ]
+    },
+    "baseline_metrics": {
+        "accuracy": 0.4177215189873418,
+        "precision_macro": 0.13924050632911392,
+        "precision_weighted": 0.17449126742509213,
+        "recall_macro": 0.3333333333333333,
+        "recall_weighted": 0.4177215189873418,
+        "f1_macro": 0.19642857142857142,
+        "f1_weighted": 0.24615732368896928,
+        "confusion_matrix": [
+            [
+                0,
+                26,
+                0
+            ],
+            [
+                0,
+                33,
+                0
+            ],
+            [
+                0,
+                20,
+                0
+            ]
+        ],
+        "classification_report_dict": {
+            "Low (At-Risk)": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 26.0
+            },
+            "Medium (Satisfactory)": {
+                "precision": 0.4177215189873418,
+                "recall": 1.0,
+                "f1-score": 0.5892857142857143,
+                "support": 33.0
+            },
+            "High (Good)": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 20.0
+            },
+            "accuracy": 0.4177215189873418,
+            "macro avg": {
+                "precision": 0.13924050632911392,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.19642857142857142,
+                "support": 79.0
+            },
+            "weighted avg": {
+                "precision": 0.17449126742509213,
+                "recall": 0.4177215189873418,
+                "f1-score": 0.24615732368896928,
+                "support": 79.0
+            }
+        },
+        "classification_report_str": "                       precision    recall  f1-score   support\n\n        Low (At-Risk)       0.00      0.00      0.00        26\nMedium (Satisfactory)       0.42      1.00      0.59        33\n          High (Good)       0.00      0.00      0.00        20\n\n             accuracy                           0.42        79\n            macro avg       0.14      0.33      0.20        79\n         weighted avg       0.17      0.42      0.25        79\n",
+        "labels": [
+            "Low (At-Risk)",
+            "Medium (Satisfactory)",
+            "High (Good)"
+        ]
+    },
+    "features_used": [
+        "age",
+        "Medu",
+        "Fedu",
+        "traveltime",
+        "studytime",
+        "failures",
+        "famrel",
+        "freetime",
+        "goout",
+        "Dalc",
+        "Walc",
+        "health",
+        "absences",
+        "G1",
+        "sex",
+        "address",
+        "famsize",
+        "Pstatus",
+        "Mjob",
+        "Fjob",
+        "reason",
+        "guardian",
+        "schoolsup",
+        "famsup",
+        "paid",
+        "activities",
+        "nursery",
+        "higher",
+        "internet",
+        "romantic"
+    ],
+    "target_classes": [
+        "Low (At-Risk)",
+        "Medium (Satisfactory)",
+        "High (Good)"
+    ]
+}
