@@ -37,3 +37,14 @@ Thumbs.db
 build/
 dist/
 *.egg-info/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Local logs
+*.log
+
+# macOS metadata
+.AppleDouble
+.LSOverride
